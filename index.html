@@ -1,135 +1,222 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Hack Map LQ V1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/icondow.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @keyframes bounce-in {
-            0% { transform: scale(0.3); opacity: 0; }
-            60% { transform: scale(1.1); opacity: 1; }
-            80% { transform: scale(0.95); }
-            100% { transform: scale(1); }
-        }
-        .animate-bounce-in {
-            animation: bounce-in 0.6s ease-out;
-        }
-        .spinner {
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top: 3px solid white;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            animation: spin 0.8s linear infinite;
-            display: inline-block;
-            vertical-align: middle;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menu Aov Crack V2 No Key</title>
+<style>
+:root{
+  --bg:#0e1422;
+  --card:#141c2c;
+  --accent:#42d392;
+  --text:#e7ecf2;
+  --muted:#98a2b3;
+  --radius:14px;
+  --glass:rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(circle at 10% 10%,rgba(66,211,146,.08),transparent 60%),var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding:20px;
+}
+.card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:var(--radius);
+  box-shadow:0 6px 25px rgba(0,0,0,.4);
+  padding:24px;
+  text-align:center;
+  width:100%;
+  max-width:400px;
+}
+h1{
+  font-size:22px;
+  margin:0 0 16px 0;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background:linear-gradient(90deg,rgba(66,211,146,.15),rgba(66,211,146,.05));
+  color:var(--text);
+  border:1px solid rgba(66,211,146,.3);
+  border-radius:10px;
+  padding:10px 18px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all .2s ease;
+  text-decoration:none;
+}
+.btn:hover{background:rgba(66,211,146,.25);}
+.icon{width:18px;height:18px;fill:currentColor}
+
+/* Phần slider ảnh */
+.slider-container{
+  position:relative;
+  margin-top:18px;
+  width:100%;
+  max-width:400px;
+  overflow:hidden;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.07);
+}
+.slider{
+  display:flex;
+  transition:transform 0.8s ease-in-out;
+}
+.slider img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+/* Mũi tên điều hướng */
+.arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.4);
+  color:var(--text);
+  border:none;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background .2s;
+}
+.arrow:hover{background:rgba(0,0,0,0.6);}
+.left{left:10px;}
+.right{right:10px;}
+
+/* Giao diện terminal */
+.terminal{
+  margin-top:30px;
+  width:100%;
+  max-width:400px;
+  background:#0b111a;
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(0,0,0,.5);
+  font-family:Menlo,Consolas,monospace;
+  overflow:hidden;
+}
+.terminal-header{
+  background:#1b2533;
+  padding:6px 12px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+}
+.red{background:#ff5f56;}
+.yellow{background:#ffbd2e;}
+.green{background:#27c93f;}
+.terminal-body{
+  background:#0b111a;
+  color:#c9ffe8;
+  padding:14px;
+  font-size:14px;
+  line-height:1.6;
+  white-space:pre-line;
+}
+.prompt{color:#42d392;}
+</style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col justify-between text-sm">
+<body>
 
-<!-- HEADER -->
-<header class="bg-white shadow-md py-3 px-5">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
-        <div class="flex items-center space-x-2" onclick="location.reload()">
-            <img src="https://i.imgur.com/PAVorPE.jpeg" alt="Logo" class="w-7 h-7">
-            <span class="text-indigo-600 font-bold text-lg">Download App</span>
-        </div>
-        <button onclick="copyCurrentURL()" class="flex items-center space-x-1 text-indigo-600 hover:text-indigo-800 text-sm font-medium">
-            <i class="fa-regular fa-share-from-square text-xl"></i>
-        </button>
-</div>
-</header>
+<div class="card">
+  <h1>Menu Crack V2 No Key</h1>
 
-<!-- MAIN CONTENT -->
-<main class="flex-1 flex flex-col items-center justify-center px-4">
-    <div class="bg-white shadow rounded-2xl p-6 sm:p-8 max-w-sm w-full text-center mt-10">
-        <img src="https://i.imgur.com/Pwtv5nI.jpeg" alt="App Icon" class="w-20 h-20 mx-auto mb-4 rounded-xl shadow">
-        <h2 class="text-2xl font-bold text-gray-800 mb-1">Map Sáng LQ V4</h2>
-        <p class="text-gray-600 text-base mb-3">Tạo lúc: 20:30 18/08/2025</p>
-<a href="itms-services://?action=download-manifest&url=https://TumadamMod.github.io/autoup/manifest-1755588758601.plist"
-   class="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-indigo-700 transition">
-    <i class="fa-solid fa-download"></i>
-    <span>Cài Đặt</span>
-</a>
+  <!-- Nút tải IPA -->
+  <a class="btn" href="https://www.mediafire.com/file/j02lh5k3rb12yql/Menu+V2.0.ipa/file" download>
+    <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M21 21H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tải IPA
+  </a>
 
-<a href="https://www.mediafire.com/file/d7vvx8mkf2dx2vv/%25C4%2591e%25CC%2580n_pin_Doreamon.ipa/file"
-   class="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-indigo-700 transition">
-    <i class="fa-solid fa-download"></i>
-    <span>Download IPA</span>
-</a>
+  <!-- Slider ảnh -->
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <img src="https://i.imgur.com/SZQ4ya5.jpeg" alt="demo1">
+      <img src="https://i.imgur.com/O1WVsu1.jpeg" alt="demo2">
+      <img src="https://i.imgur.com/eVWYkGY.jpeg" alt="demo3">
+      <img src="https://i.imgur.com/BmGWm9p.jpeg" alt="demo4">
     </div>
-
-        <div class="bg-white shadow rounded-xl mt-6 p-4 max-w-sm w-full text-gray-700">
-        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 text-center">Mô Tả App</h3>
-        <p class="text-base whitespace-pre-line text-center" style="line-height: 1">Bao Gồm Chức Năng:
-        Hack Map,Hiện LS Đấu,Thời Gian Hồi Chiêu,Cam Xa 3 Nấc
-        Chạm 3 Ngón Tay Vào Màn Hình Liên Tiếp Để Bật/Tắt Menu
-        </p>
-    </div>
-    
-    <!-- Hướng dẫn -->
-    <div class="mt-8 w-full max-w-3xl px-2 mx-auto">
-        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 text-center">Hướng Dẫn Tin Cậy</h3>
-        <div class="overflow-x-auto">
-            <div class="flex space-x-3 pb-2 w-max mx-auto">
-                <img src="https://i.imgur.com/56TqnFh.png" alt="Bước 1" class="rounded-lg shadow w-40 h-auto flex-shrink-0">
-                <img src="https://i.imgur.com/ZiXN2n7.png" alt="Bước 2" class="rounded-lg shadow w-40 h-auto flex-shrink-0">
-                <img src="https://i.imgur.com/5KIIyuG.png" alt="Bước 3" class="rounded-lg shadow w-40 h-auto flex-shrink-0">
-            </div>
-        </div>
-    </div>
-</main>
-
-<!-- MODAL THÔNG BÁO -->
-<div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
-  <div class="bg-white rounded-2xl shadow-xl text-center p-6 w-80 animate-bounce-in">
-      <div class="text-green-500 text-5xl mb-4">
-          <i class="fa-solid fa-circle-check animate-ping-once"></i>
-      </div>
-      <div class="text-xl font-semibold mb-1">Cài đặt thành công!</div>
+    <button class="arrow left" id="prev">&#10094;</button>
+    <button class="arrow right" id="next">&#10095;</button>
   </div>
 </div>
 
-<!-- FOOTER -->
-<footer class="bg-white shadow-inner py-3 px-4 text-center text-xs text-gray-600">
-    © 2025 <a href="https://tumadammod.github.io/bio/" class="text-blue-600 hover:underline">Tumadam Mod</a> - All rights reserved.
-</footer>
+<!-- Terminal -->
+<div class="terminal">
+  <div class="terminal-header">
+    <div class="dot red"></div>
+    <div class="dot yellow"></div>
+    <div class="dot green"></div>
+  </div>
+  <div class="terminal-body">
+    <span class="prompt">➜</span> Kín = Bất Tử<br>
+    <span class="prompt">➜</span> Menu Esp Ai Chưa Quen Chơi Esp Thì Test Clone Trước<br>
+    <span class="prompt">➜</span> Free Bán Làm Chó Ăn Cứt<br>
+  </div>
+</div>
 
-<!-- SCRIPT -->
 <script>
-function copyCurrentURL() {
-    const currentURL = window.location.href;
-    navigator.clipboard.writeText(currentURL).then(() => {
-        alert("Đã sao chép: " + currentURL);
-    }).catch(() => {
-        alert("Không thể sao chép liên kết!");
-    });
+const slider = document.getElementById('slider');
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
+const slides = slider.children;
+let index = 0;
+const total = slides.length;
+
+// Hàm chuyển ảnh
+function showSlide(i){
+  slider.style.transform = `translateX(-${i * 100}%)`;
 }
 
-document.getElementById('installBtn').addEventListener('click', function () {
-    const btn = this;
+// Tự động trượt
+let autoSlide = setInterval(()=>{
+  index = (index + 1) % total;
+  showSlide(index);
+}, 3000); // 3 giây
 
-    btn.innerHTML = `<div class="spinner"></div> <span>Đang cài đặt...</span>`;
-    btn.classList.add("opacity-70", "cursor-wait");
+// Mũi tên điều hướng
+next.addEventListener('click', ()=>{
+  clearInterval(autoSlide);
+  index = (index + 1) % total;
+  showSlide(index);
+  autoSlide = setInterval(()=>{
+    index = (index + 1) % total;
+    showSlide(index);
+  }, 3000);
+});
 
-    // Hiện modal sau 30s
-    setTimeout(() => {
-        document.getElementById('successModal').classList.remove('hidden');
-    }, 30000);
-
-    // F5 sau 35s
-    setTimeout(() => {
-        window.location.reload();
-    }, 35000);
+prev.addEventListener('click', ()=>{
+  clearInterval(autoSlide);
+  index = (index - 1 + total) % total;
+  showSlide(index);
+  autoSlide = setInterval(()=>{
+    index = (index + 1) % total;
+    showSlide(index);
+  }, 3000);
 });
 </script>
+
 </body>
 </html>
