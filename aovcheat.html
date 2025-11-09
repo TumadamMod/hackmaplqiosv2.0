@@ -116,24 +116,18 @@
   pointer-events: none;
   opacity: 0.8;
 }
-
-.btn.loading::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 22px;
-  height: 22px;
-  border: 3px solid rgba(255,255,255,0.6);
-  border-top-color: white;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: spin 0.9s linear infinite;
+/* Hiệu ứng lắc khi loading */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
 }
 
-@keyframes spin {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+.btn.loading {
+  animation: shake 0.5s infinite;
 }
   </style>
 </head>
@@ -254,26 +248,21 @@
         item.style.scrollSnapAlign = 'center';
       });
     });
-    // Hiệu ứng xoay khi bấm nút Cài Đặt
-const installBtn = document.querySelector('.btn.primary');
+    <script>
+  const installBtn = document.querySelector('.btn.primary');
 
-installBtn.addEventListener('click', function(e){
-  e.preventDefault(); // ngăn chuyển link ngay lập tức
+  installBtn.addEventListener('click', function(e){
+    e.preventDefault(); // chặn bấm trực tiếp
 
-  // Thêm class loading
-  installBtn.classList.add('loading');
-  let oldText = installBtn.innerText;
-  installBtn.innerText = "";
+    installBtn.textContent = "Đang cài đặt...";
+    installBtn.classList.add("loading");
 
-  // Sau 5 giây xoay → trở lại nút cũ
-  setTimeout(() => {
-    installBtn.classList.remove('loading');
-    installBtn.innerText = oldText;
-
-    // Điều hướng tới link cài đặt
-    window.location.href = installBtn.getAttribute('href');
-  }, 5000);
-});
+    // sau 2s chuyển trang
+    setTimeout(() => {
+      window.location.href = installBtn.href;
+    }, 2000);
+  });
+</script>
   </script>
 </body>
 </html>
