@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>AOVCHEAT</title>
+  <title>AovCheat</title>
   <style>
     :root{
       --blue:#2d8cff;
@@ -76,9 +76,100 @@
       .gallery-heading{font-size:36px}
     }
     .bottom-space{height:72px}
+    /* === Floating Guide Button === */
+.guide-btn{
+  position:fixed;
+  bottom:16px;
+  right:16px;
+  z-index:999;
+  background:linear-gradient(135deg,#2d8cff,#5aa8ff);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:800;
+  box-shadow:0 12px 30px rgba(45,140,255,.35);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+}
+
+.guide-text{
+  white-space:nowrap;
+  overflow:hidden;
+  max-width:160px;
+}
+
+.guide-text span{
+  display:inline-block;
+  animation:marquee 6s linear infinite;
+}
+
+@keyframes marquee{
+  0%{transform:translateX(100%)}
+  100%{transform:translateX(-100%)}
+}
+
+/* === Modal Video === */
+.video-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+}
+
+.video-box{
+  width:92%;
+  max-width:720px;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+.video-header{
+  padding:12px 16px;
+  font-weight:800;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.close-video{
+  font-size:20px;
+  cursor:pointer;
+  color:#ff3b3b;
+}
   </style>
 </head>
 <body>
+<!-- Floating Guide Button -->
+<div class="guide-btn" onclick="openVideo()">
+  ▶️
+  <div class="guide-text">
+    <span>Hướng dẫn cài app</span>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="video-modal" id="videoModal">
+  <div class="video-box">
+    <div class="video-header">
+      <span>Hướng dẫn cài app qua TestFlight</span>
+      <span class="close-video" onclick="closeVideo()">✕</span>
+    </div>
+    <iframe
+      width="100%"
+      height="380"
+      src="https://www.youtube.com/embed/Gs06zkAIotc"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
   <header class="appbar">
     <div class="appbar-inner">
       <img class="appstore-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6dL0wcVnCQ3aUNsBz-4eCLYJH5QXXZY9KMQ&s" alt="App Store">
@@ -99,10 +190,10 @@
         </div>
 
         <div class="developer"></div>
-        <div class="meta"><span>Miễn phí</span> · <span>25/01/2026</span></div>
+        <div class="meta"><span>Miễn phí</span> · <span>31/01/2026</span></div>
                 <div class="actions">
 <a class="btn primary" href="itms-services://?action=download-manifest&url=https://tumadammod.github.io/autoup/manifest-1769332423721.plist">Cài Đặt</a>
-          <a class="btn ghost" href="https://github.com/TumadamMod/hackmaplqiosv2.0/releases/download/aovvheat/6ka4X9O14INUFNOG.ipa">Tải IPA</a>
+          <a class="btn ghost" href="https://github.com/TumadamMod/hackmaplqiosv2.0/releases/download/aovvheat/LQMB.VIP_1.61.11572693_1769815475.ipa">Tải IPA</a>
         </div>
       </div>
     </section>
@@ -114,10 +205,10 @@
       </div>
 
       <ul class="screenshot-list" role="list">
-        <li><img src="https://files.catbox.moe/zb5sr1.png" alt="screenshot 1"></li>
-        <li><img src="https://files.catbox.moe/vbxblv.png" alt="screenshot 2"></li>
-                <li><img src="https://files.catbox.moe/a600p4.png" alt="screenshot 3"></li>
-                                <li><img src="https://files.catbox.moe/tqd171.png" alt="screenshot 4"></li>
+        <li><img src="https://files.catbox.moe/a7aqcn.png" alt="screenshot 1"></li>
+        <li><img src="https://files.catbox.moe/kc8c89.png" alt="screenshot 2"></li>
+                <li><img src="https://files.catbox.moe/1947za.png" alt="screenshot 3"></li>
+                                <li><img src="https://files.catbox.moe/bqr8u2.png" alt="screenshot 4"></li>
                                                                   </ul>
     </section>
 <p class="lead-text muted-list">
@@ -127,24 +218,16 @@
       https://tumadam.io.vn/autoup/note_list_skin
     </a>
   </b>
+  <b>
+  -Chứng Chỉ Apple Đang Quét Khá Căng Ae Chơi Tạm Bản Cài Trực Tiếp Nhé.
 </p>
     <section class="section gallery-instructions">
-      <div class="gallery-heading">Hướng Dẫn Tin Cậy</div>
+      <div class="gallery-heading">Hướng Dẫn Cài App</div>
       <div class="gallery-scroll">
         <img src="https://i.imgur.com/56TqnFh.png" alt="Hướng dẫn 1">
         <img src="https://i.imgur.com/ZiXN2n7.png" alt="Hướng dẫn 2">
         <img src="https://i.imgur.com/5KIIyuG.png" alt="Hướng dẫn 3">
       </div>
-    </section>
-
-    <section class="section whats-new">
-      <h3 class="whats-new-title">Hướng Dẫn Sử Dụng</h3>
-      <div class="video-wrapper">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/4CrIl1HqCoE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p class="lead-text muted-list">
-        Phiên bản 1.6.1<br>
-      </p>
     </section>
 
     <section class="section">
@@ -161,6 +244,18 @@
     </footer>
     <div class="bottom-space"></div>
   </main>
+<script>
+function openVideo(){
+  document.getElementById('videoModal').style.display = 'flex';
+}
 
+function closeVideo(){
+  const modal = document.getElementById('videoModal');
+  modal.style.display = 'none';
+  // reset video
+  const iframe = modal.querySelector('iframe');
+  iframe.src = iframe.src;
+}
+</script>
 </body>
 </html>
